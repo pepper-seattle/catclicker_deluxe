@@ -12,6 +12,7 @@ In an effort to build the most ridiculous and awesome cat clicker game out there
 1. Click on that cat.
 2. Marvel in the number of times you've clicked on that cat.
 3. Rinse, repeat.
+4. Click on the counter to start it all over again.
 
 # Rules for Contributing
 
@@ -22,3 +23,4 @@ In an effort to build the most ridiculous and awesome cat clicker game out there
 
 ## Contributors
 * [pepper-seattle](https://github.com/pepper-seattle)
+* [sdfnz](https://github.com/sdfnz)
