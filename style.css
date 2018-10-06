@@ -2,12 +2,8 @@ body {
   background-color: #03bbbb;
   color: #ffffff;
   cursor: default;
-  display: flex;
-  flex-direction: column;
   font-family: Copse, serif;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
+  margin: 0;
 }
 
 header {
@@ -23,6 +19,7 @@ header {
 }
 
 img {
+	position: absolute;
   border: 10px solid #c6f1b4;
   cursor: pointer; 
   width: 500px;
@@ -36,6 +33,8 @@ img {
   justify-content: center;
   font-size: 32px;
   padding: 0 10px;
+  cursor: pointer; 
+	margin-right: 10px;
 }
 
 /* Media Queries */
