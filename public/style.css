@@ -8,6 +8,7 @@
 
 html, body {
   overflow: hidden;
+	overflow-x: hidden;
   width: 100vw;
   height: 100vh;
 }
@@ -36,6 +37,7 @@ header {
 }
 
 img {
+	position: absolute;
   border: 10px solid #333;
   cursor: pointer; 
   width: 500px;
