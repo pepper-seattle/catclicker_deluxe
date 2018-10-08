@@ -1,5 +1,4 @@
 let count = 0;
-
 const cat = document.querySelector('img');
 const growl = document.querySelector('audio');
 const counter = document.querySelector(".counter");
