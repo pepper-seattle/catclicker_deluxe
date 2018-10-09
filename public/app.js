@@ -1,4 +1,6 @@
 const cat = document.querySelector('img');
+const meow = document.querySelector('audio');
+
 let count = 0;
 let width = window.innerWidth;
 let height = window.innerHeight;
@@ -37,8 +39,9 @@ catJump();
 // adds to counter and randomly moves cat upon click
 const counter = document.querySelector(".counter");
 cat.onclick = () => {
+  meow.play();
   count += 1;
-  counter.innerHTML = "Clicks: " + count;
+	counter.innerHTML = "Clicks: " + count;
 	catJump();
 };
 

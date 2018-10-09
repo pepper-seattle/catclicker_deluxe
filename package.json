@@ -1,0 +1,23 @@
+{
+  "name": "catclicker_deluxe",
+  "version": "1.0.0",
+  "description": "[Hacktoberfest](https://hacktoberfest.digitalocean.com/faq) is a celebration of open source software and collaboration between devs.",
+  "main": "app.js",
+  "scripts": {
+    "start": "serve ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepper-seattle/catclicker_deluxe.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pepper-seattle/catclicker_deluxe/issues"
+  },
+  "homepage": "https://github.com/pepper-seattle/catclicker_deluxe#readme",
+  "devDependencies": {
+    "serve": "^10.0.2"
+  }
+}
