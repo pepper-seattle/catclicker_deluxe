@@ -38,6 +38,7 @@ header {
 img {
   border: 10px solid #333;
   cursor: pointer; 
+  position: absolute;
   width: 500px;
   height: 500px;
   margin: 20px;
