@@ -23,3 +23,4 @@ In an effort to build the most ridiculous and awesome cat clicker game out there
 ## Contributors
 * [pepper-seattle](https://github.com/pepper-seattle)
 * [synaestheory](https://github.com/synaesthoery)
+* [thepeej](https://github.com/thepeej)
