@@ -26,3 +26,4 @@ In an effort to build the most ridiculous and awesome cat clicker game out there
 * [synaestheory](https://github.com/synaesthoery)
 * [thepeej](https://github.com/thepeej)
 * [sdfnz](https://github.com/sdfnz)
+* [guptaravi540](https://github.com/guptaravi540)
