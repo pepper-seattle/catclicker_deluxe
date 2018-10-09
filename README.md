@@ -21,6 +21,15 @@ In an effort to build the most ridiculous and awesome cat clicker game out there
 3. No advertising/pimping yo' sh*t (cat clicker doesn't need sponsorship at this time).
 4. Once you've completed your work add yourself as a contributor to the list below.
 
+# Get Started
+
+1. Clone this repository by `git clone https://github.com/pepper-seattle/catclicker_deluxe.git`
+2. `cd catclicker_delux` to change into project directory
+3. `npm install` to install all required dependencies
+4. `npm start` to start the local server
+
+Now go to http://localhost:5000 to visit the site.
+
 ## Contributors
 * [pepper-seattle](https://github.com/pepper-seattle)
 * [synaestheory](https://github.com/synaesthoery)
