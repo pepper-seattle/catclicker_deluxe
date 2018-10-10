@@ -66,7 +66,6 @@ var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
 fetch(proxyUrl + targetUrl)
   .then(response => response.json())
   .then(data => {
-	console.log('meow');
     document.getElementById('catFact').innerHTML = data.fact;
     return data;
   })
