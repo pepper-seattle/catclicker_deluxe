@@ -36,3 +36,4 @@ Now go to http://localhost:5000 to visit the site.
 * [thepeej](https://github.com/thepeej)
 * [sdfnz](https://github.com/sdfnz)
 * [guptaravi540](https://github.com/guptaravi540)
+* [Shubham Karala](https://github.com/ShubhamKarala)
