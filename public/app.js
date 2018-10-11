@@ -58,3 +58,19 @@ window.addEventListener("resize", () => {
 	dietPlan();
 	catJump();
 });
+
+//fetch API for cat's fact upon button click
+document.getElementById('catButton').onclick = () => {
+var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+    targetUrl = 'https://catfact.ninja/fact?max_length=200'
+fetch(proxyUrl + targetUrl)
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('catFact').innerHTML = data.fact;
+    return data;
+  })
+  .catch(e => {
+    console.log(e);
+    return e;
+  });
+};
