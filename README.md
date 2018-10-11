@@ -1,6 +1,6 @@
 ## Hacktoberfest 2018
 # What is Hacktoberfest?
-[Hacktoberfest](https://hacktoberfest.digitalocean.com/faq) is a celebration of open source software and collaboration between devs. 
+[Hacktoberfest](https://hacktoberfest.digitalocean.com/faq) is a celebration of open source software and collaboration between devs.
 
 # Hacktoberfest and Cat Clicker Deluxe
 In an effort to build the most ridiculous and awesome cat clicker game out there today I invite you to fork this repo and do your best/worst! You'll get some points towards a killer Hacktoberfest t-shirt and the satisfaction that you've helped society in no way, shape, or form by improving this game.
@@ -37,3 +37,4 @@ Now go to http://localhost:5000 to visit the site.
 * [sdfnz](https://github.com/sdfnz)
 * [guptaravi540](https://github.com/guptaravi540)
 * [Shubham Karala](https://github.com/ShubhamKarala)
+* [forwinder15](https://github.com/forwinder15)
