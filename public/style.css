@@ -36,9 +36,9 @@ header {
 }
 
 img {
-  border: 10px solid #333;
+  border: 10px solid #40E0D0;
   /*cursor: pointer;*/
-  cursor: url('cursor.cur'), auto; 
+  cursor: url('cursor.cur'), auto;
   position: absolute;
   width: 500px;
   height: 500px;
