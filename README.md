@@ -39,4 +39,5 @@ Now go to http://localhost:5000 to visit the site.
 * [Shubham Karala](https://github.com/ShubhamKarala)
 * [astrokwk](https://github.com/astrokwk)
 * [forwinder15](https://github.com/forwinder15)
+* [artdevgame](https://github.com/artdevgame)
 
