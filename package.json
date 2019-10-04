@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/pepper-seattle/catclicker_deluxe#readme",
   "devDependencies": {
-    "serve": "^10.0.2"
+    "serve": "11.2.0"
   }
 }
