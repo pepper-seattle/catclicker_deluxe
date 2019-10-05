@@ -1,4 +1,4 @@
-const cat = document.querySelector('img');
+const cats = document.getElementsByTagName('img');
 const meow = document.querySelector('audio');
 
 let count = 0;
@@ -15,12 +15,14 @@ function dietPlan() {
 		factor = .2;
 	}
 	responsiveSize = width * factor;
-	cat.style.width = `${responsiveSize}px`;
-	cat.style.height = `${responsiveSize}px`;
+	for(let i = 0, len = cats.length; i < len; i++) {
+		cats[i].style.width = `${responsiveSize}px`;
+		cats[i].style.height = `${responsiveSize}px`;
+	}
 };
 
 // moves cat around to a random part of the screen
-function catJump() {
+function catJump(catIndex) {
 	let randomWidth = Math.floor((Math.random() * (width - responsiveSize)) + 1);
 	let randomHeight = Math.floor((Math.random() * (height - responsiveSize)) + 1);
 	let header = document.querySelector("header");
@@ -28,22 +30,26 @@ function catJump() {
 	if (randomHeight <= headerHeight) {
 		randomHeight += headerHeight;
 	};
-	cat.style.left = `${randomWidth}px`;
-	cat.style.top = `${randomHeight}px`;
+	cats[catIndex].style.left = `${randomWidth}px`;
+	cats[catIndex].style.top = `${randomHeight}px`;
 };
 
 // sets initial size and position of cat
 dietPlan();
-catJump();
+for(let i = 0, len = cats.length; i < len; i++) {
+	catJump(i);
+}
 
 // adds to counter and randomly moves cat upon click
 const counter = document.querySelector(".counter");
-cat.onclick = () => {
-  meow.play();
-  count += 1;
-	counter.innerHTML = "Clicks: " + count;
-	catJump();
-};
+	for(let i = 0, len = cats.length; i < len; i++) {
+		cats[i].onclick = () => {
+		  meow.play();
+		  count += 1;
+			counter.innerHTML = "Clicks: " + count;
+			catJump(i);
+		};
+	}
 
 // resets counter upon click
 counter.onclick = () => {
@@ -56,7 +62,9 @@ window.addEventListener("resize", () => {
 	width = window.innerWidth;
 	height = window.innerHeight;
 	dietPlan();
-	catJump();
+	for(let i = 0, len = cats.length; i < len; i++) {
+		catJump(i);
+	}
 });
 
 //fetch API for cat's fact upon button click
