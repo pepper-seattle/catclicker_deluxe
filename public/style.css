@@ -72,10 +72,16 @@ img {
   width: 100%;
 }
 
-#play-space img {
+#play-space img:nth-child(even) {
   -webkit-animation:spin 2s linear infinite;
   -moz-animation:spin 2s linear infinite;
   animation:spin 2s linear infinite;
+}
+
+#play-space img:nth-child(odd) {
+  -webkit-animation:spin 2s linear reverse infinite;
+  -moz-animation:spin 2s linear reverse infinite;
+  animation:spin 2s linear reverse infinite;
 }
 
 .container {

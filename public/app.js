@@ -1,4 +1,4 @@
-const cat = document.querySelector('img');
+const cats = document.getElementsByTagName('img');
 const meow = document.querySelector('audio');
 const muteButton = document.querySelector('.muteButton');
 
@@ -19,12 +19,14 @@ function dietPlan() {
 		factor = .2;
 	}
 	responsiveSize = width * factor;
-	cat.style.width = `${responsiveSize}px`;
-	cat.style.height = `${responsiveSize}px`;
+	for(const cat of cats) {
+		cat.style.width = `${responsiveSize}px`;
+		cat.style.height = `${responsiveSize}px`;
+	}
 };
 
 // moves cat around to a random part of the screen
-function catJump() {
+function catJump(cat) {
 	let randomWidth = Math.floor((Math.random() * (width - responsiveSize)) + 1);
 	let randomHeight = Math.floor((Math.random() * (height - responsiveSize)) + 1);
 	let header = document.querySelector("header");
@@ -38,21 +40,25 @@ function catJump() {
 
 // sets initial size and position of cat
 dietPlan();
-catJump();
+for(const cat of cats) {
+	catJump(cat);
+}
 
 // adds to counter and randomly moves cat upon click
 const counter = document.querySelector(".counter");
-cat.onclick = () => {
-  meow.play();
-  count += 1;
-	counter.innerHTML = "Clicks: " + count;
-	catJump();
-};
+for(const cat of cats) {
+	cat.onclick = () => {
+	  meow.play();
+	  count += 1;
+		counter.innerHTML = "Clicks: " + count;
+		catJump(cat);
+	};
+}
 
 // resets counter upon click
 counter.onclick = () => {
 	count = 0;
-  counter.innerHTML = "Clicks: " + count;
+  	counter.innerHTML = "Clicks: " + count;
 };
 
 // resizes and moves cat upon window resize
@@ -60,7 +66,9 @@ window.addEventListener("resize", () => {
 	width = window.innerWidth;
 	height = window.innerHeight;
 	dietPlan();
-	catJump();
+	for(const cat of cats) {
+		catJump(cat);
+	}
 });
 
 //fetch API for cat's fact upon button click
@@ -89,3 +97,4 @@ muteButton.onclick = () => {
 		muteButton.removeAttribute("id", "muted");
 	}
 };
+
