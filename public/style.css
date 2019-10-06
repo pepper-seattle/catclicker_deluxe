@@ -37,7 +37,6 @@ header {
 
 img {
   border: 10px solid #40E0D0;
-  /*cursor: pointer;*/
   cursor: url('cursor.cur'), auto;
   position: absolute;
   width: 500px;

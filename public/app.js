@@ -1,5 +1,6 @@
 const cat = document.querySelector('img');
 const meow = document.querySelector('audio');
+const muteButton = document.querySelector('.muteButton');
 
 let count = 0;
 let width = window.innerWidth;
@@ -73,4 +74,15 @@ fetch(proxyUrl + targetUrl)
     console.log(e);
     return e;
   });
+};
+
+//mute button functionality
+muteButton.onclick = () => {
+	if(!muteButton.hasAttribute("id", "muted")){
+		meow.volume = 0;
+		muteButton.setAttribute("id", "muted");
+	}else{
+		meow.volume = 0.5;
+		muteButton.removeAttribute("id", "muted");
+	}
 };
