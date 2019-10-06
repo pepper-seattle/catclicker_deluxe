@@ -8,6 +8,9 @@ let height = window.innerHeight;
 let factor;
 let responsiveSize;
 
+// set initial volume
+meow.volume = 0.2;
+
 // changes the size factor of the cat depending on the screen size
 function dietPlan() {
 	if (width <= 750) {
@@ -82,7 +85,7 @@ muteButton.onclick = () => {
 		meow.volume = 0;
 		muteButton.setAttribute("id", "muted");
 	}else{
-		meow.volume = 0.5;
+		meow.volume = 0.2;
 		muteButton.removeAttribute("id", "muted");
 	}
 };
