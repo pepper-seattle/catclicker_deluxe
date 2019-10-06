@@ -1,11 +1,15 @@
 const cats = document.getElementsByTagName('img');
 const meow = document.querySelector('audio');
+const muteButton = document.querySelector('.muteButton');
 
 let count = 0;
 let width = window.innerWidth;
 let height = window.innerHeight;
 let factor;
 let responsiveSize;
+
+// set initial volume
+meow.volume = 0.2;
 
 // changes the size factor of the cat depending on the screen size
 function dietPlan() {
@@ -82,3 +86,15 @@ fetch(proxyUrl + targetUrl)
     return e;
   });
 };
+
+//mute button functionality
+muteButton.onclick = () => {
+	if(!muteButton.hasAttribute("id", "muted")){
+		meow.volume = 0;
+		muteButton.setAttribute("id", "muted");
+	}else{
+		meow.volume = 0.2;
+		muteButton.removeAttribute("id", "muted");
+	}
+};
+
